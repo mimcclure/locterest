@@ -40,7 +40,8 @@ function Header() {
         </div>
         <HiBell className='text-[25px] md:text-[40px] text-#f9f9f9 cursor-pointer'/>
         <HiChat className='text-[25px] md:text-[40px] text-#f9f9f9 cursor-pointer'/>
-        {session?.user?<Image src={session.user.image} 
+        {session?.user?
+        <Image src={session.user.image} 
         onClick={()=>router.push('/'+session.user.email)} 
         alt='user-image' width={50} height={50}
         className='hover:bg-#f9f9f9 p-2 rounded-full cursor-pointer'/>:
