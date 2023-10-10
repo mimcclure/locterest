@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { getFirestore } from 'firebase/firestore'
 import app from '../Shared/firebaseConfig'
-import UserInfo from './../components/UserInfo'
+import UserInfo from '../components/Pins/UserInfo'
 
 function Profile({params}) {
   const db = getFirestore(app);
